@@ -1,0 +1,64 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "extends": [
+        "airbnb-base",
+        "eslint:recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "global-require": 0,
+        "import/no-dynamic-require": 0,
+        "import/prefer-default-export": 0,
+        "no-await-in-loop": 0,
+        "no-console": 1,
+        "no-underscore-dangle": 0,
+        "no-restricted-syntax": 0,
+        "no-return-await": 0,
+        "no-unused-vars": 1,
+        "prettier/prettier": [
+            "error",
+            {
+                "arrowParens": "always",
+                "endOfLine": "lf",
+                "trailingComma": "es5",
+                "printWidth": 80,
+                "singleQuote": true,
+                "tabWidth": 2
+            }
+        ],
+        "func-names": "off",
+        "no-plusplus": "off",
+        "no-process-exit": "off",
+        "class-methods-use-this": "off"
+    }
+}
